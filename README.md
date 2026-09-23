@@ -232,8 +232,8 @@ x = x + v
 ## Known issues and notes
 
 - **Lab 1:** the written answers quote scores of 0.0403 (Sphere) and 0.4606 (Rastrigin). These don't match the printed outputs (0.0515 and 3.3709), because Random Search is unseeded and every run gives different numbers. Add `random.seed(...)` before the searches to make the results repeatable.
-- **Lab 2:** the `run_aco` function signature was cut off in the source PDF. It was completed as `seed=67`.
+- **Lab 2:** the `run_aco` function signature was cut off in the source PDF. It was completed as `seed=79`.
   - With this seed, the evaporation 0.1 run gives a 95.1% share. The notebook showed 97.7%, so it probably used a different seed there.
-  - The main plot title says "seed 21", but the code uses seed 67.
-- **Lab 3:** the main run uses seed 101, but the particle-trajectory plot title says "seed 67". The `run_pso` experiments default to seed 67.
+  - The main plot title says "seed 21", but the code uses seed 79.
+- **Lab 3:** the main run uses seed 79, but the particle-trajectory plot title says "seed 79". The `run_pso` experiments default to seed 79.
   - All printed Lab 3 results match the original notebook exactly.
